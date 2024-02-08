@@ -6,7 +6,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   
-}
+  }
  a{
   text-decoration: none;
 }
@@ -92,9 +92,13 @@ li {
   }
   .header-item {
     display: flex;
-    gap: 40px;
+  padding: 24px 0;
+  text-decoration: none;
+  gap: 40px;
   }
   
+  
+ 
   
   .link.aktive::after,
 .link:hover::after {
@@ -124,7 +128,10 @@ li {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-  .link:focus
+  .link:focus{
+    color: #404bbf;
+  }
+  
   .link:hover {
     color: #404bbf;
   }
@@ -235,12 +242,11 @@ url(/images/people-office\ 1.jpg);
 }
 /* Text */
 .text-container {
-  
   padding: 120px 0;
-  
 }
-.text-div{
-  background: #FFF;
+
+.text-div {
+  background: #fff;
 }
 
 
@@ -274,7 +280,7 @@ url(/images/people-office\ 1.jpg);
     height: 112px;
     margin-bottom: 22px;
   margin-bottom: 8px;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+  
     border-radius: 4px;
   }
   .main-caption {
@@ -287,24 +293,26 @@ url(/images/people-office\ 1.jpg);
   text-align: left;
     
 }
-.feature-text{
-  text-align: left;
+.feature-text {
+  
+  text-align: center;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
   letter-spacing: 0.02em;
   color: #434455;
   flex-direction: column;
   width: 264px;
   height: 72px;
-  
-   }
+}
  /* Heading */
 
   .heading {
     padding: 120px 0;
-    background: var(--CLOUD, #F4F4FD);
+    background-color: #f4f4fd;
     
   }
+  
+  
  
     
     .title-team{
@@ -345,7 +353,7 @@ url(/images/people-office\ 1.jpg);
 .row-div {
   
   padding: 32px 0;
-  text-align: center; 
+  
   }
 
 .main-subtitle {
@@ -421,6 +429,14 @@ url(/images/people-office\ 1.jpg);
 }
 
 .portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+  align-items: center;
+  justify-content: center;
+}
+.portfolio-li {
   width: calc((100% - 48px) / 3);
   position: relative;
     overflow: hidden;
@@ -428,7 +444,6 @@ url(/images/people-office\ 1.jpg);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 2px 1px rgba(46, 47, 66, 0.08);
-  
 }
 
 .portfolio-li:hover .overlay{
@@ -502,6 +517,9 @@ portfolio-li:hover .overlay {
   .footer-item {
     color: #f4f4fd;
   }
+  
+  
+  
   .footer-div{
     display: flex;
   flex-direction: row;
@@ -584,12 +602,8 @@ portfolio-li:hover .overlay {
       transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  .footer-links:hover{
-    background-color: #31d0aa;
-  }
-  .footer-links:focus{
-  background-color: #31d0aa;
-  }
+  
+  
   .social-icon{
     fill: #f4f4fd;
     width: 24px;
