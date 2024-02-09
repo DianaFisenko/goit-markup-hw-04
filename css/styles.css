@@ -36,7 +36,7 @@ h4,
 h5,
 h6,
 p {
-  margin: 0 auto;
+  margin: 0;
 }
   
 ul,
@@ -96,13 +96,11 @@ li {
   }
   .header-item {
     display: flex;
-  padding: 24px 0;
+  
   text-decoration: none;
   gap: 40px;
   }
-  .header-item li {
-    margin: 40px;
-  }
+  
   
   .link:hover,
   .link:focus {
@@ -130,12 +128,12 @@ li {
 }
 
 .link {
+  padding: 24px 0;
   position: relative;
   color: #2e2f42;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding: 4px 0;
   display: block;
   font-size: 16px;
   text-decoration: none;
@@ -155,29 +153,19 @@ li {
   
   .header-address {
     font-style: normal;
-    display: flex;
+    
    
   }
-  .header-address {
-    color: #434455;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    gap: 40px;
-  }
+  
   
   .address-item {
-    margin: 0 auto;
-  padding: 24px 0 24px;
-  font-style: normal;
-  text-decoration: none;
+   
   display: flex;
   gap: 40px;
   }
   
   .address-link {
     color: #2e2f42;
-    font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
     padding: 24px 0;
@@ -357,10 +345,7 @@ li {
       0px 1px 1px 0px rgba(46, 47, 66, 0.16),
       0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
-.heading-foto{
-  width: 260px;
-  height: 264px;
-}
+
 
 .heading-foto img{
   width: 100%;
@@ -389,9 +374,7 @@ li {
     display: flex;
     justify-content: center;
     gap: 24px;
-    align-items: center;
-    
-  }
+   }
   
   .social-item {
     width: 40px;
@@ -458,11 +441,13 @@ li {
   position: relative;
     overflow: hidden;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-        0px 1px 1px rgba(46, 47, 66, 0.16),
-        0px 2px 1px rgba(46, 47, 66, 0.08); 
+    
 }
-
+.portfolio-li:hover{
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 .portfolio-li:hover .overlay{
   transform:translateY(0%);;
 }
@@ -520,13 +505,14 @@ portfolio-li:hover .overlay {
 .subtitle{
   
   margin: 0;
-  padding: 32px 16px 8px 16px;
+  margin-bottom: 8px;
+ 
 }
 
 .prtf-text{
  
   margin: 0;
-  padding: 8px 16px 32px 16px;
+  
   
 }
   
@@ -553,8 +539,6 @@ portfolio-li:hover .overlay {
   color: #f4f4fd;
   letter-spacing: 0.02em;
   width: 264px;
-  margin-bottom: 16px;
-  display: flex;
   }
   .footer {
     background-color: #2e2f42;
@@ -577,7 +561,7 @@ portfolio-li:hover .overlay {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.02em; 
     color: #ffffff;
     margin-bottom: 16px;
     
